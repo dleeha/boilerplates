@@ -1,4 +1,4 @@
-## Create Container Template 
+## Container Template 
 
 ### Preparation
 
@@ -22,7 +22,7 @@ sudo poweroff
 
 ### Create instance from template
 
-### Boot instance and configure (workaround for absence of cloudoinit)
+### Boot instance and configure (workaround for absence of cloudinit)
 ```
 cd /etc/ssh
 sudo rm ssh_host_*
