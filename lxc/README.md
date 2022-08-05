@@ -19,8 +19,10 @@ sudo poweroff
 ```
 
 ### Convert to container template
+Execute from Proxmox web UI
 
 ### Create instance from template
+Execute from Proxmox web UI
 
 ### Boot instance and configure (workaround for absence of cloudinit)
 ```
