@@ -1,11 +1,12 @@
-## Container Template 
+# Container Template 
 
+## Done ONCE at template creation
 ### Preparation
 
 Execute in container
 ```
-sudo apt update && sudo apt dist-upgrade -y
-
+sudo apt update
+sudo apt upgrade -y
 sudo apt clean
 sudo apt autoremove
 
@@ -20,6 +21,8 @@ sudo poweroff
 
 ### Convert to container template
 Execute from Proxmox web UI
+
+## For each instance created from template
 
 ### Create instance from template
 Execute from Proxmox web UI
