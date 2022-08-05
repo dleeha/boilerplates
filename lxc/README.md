@@ -38,6 +38,8 @@ rm ssh_host_*
 
 truncate -s 0 /etc/machine-id
 
+history -c
+
 poweroff
 ```
 
