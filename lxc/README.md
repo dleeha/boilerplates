@@ -16,7 +16,11 @@ apt upgrade -y
 ### - utils
 #tmux curl
 apt install tmux curl -y
+
+
 # TBD: mosh
+locale-gen en_US.UTF-8 #req'd by mosh
+
 
 ### - k8s
 #kubectl
