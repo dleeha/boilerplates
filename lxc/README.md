@@ -12,19 +12,25 @@ apt upgrade -y
 
 
 ### --- customize start
+
+### - utils
 #tmux curl
 apt install tmux curl -y
+# TBD: mosh
+
+### - k8s
 #kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 #install
 install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+# TBD: kubens, kubectx
 
+
+### - user
 username=ladmin
 password=P@ssw0rd
-
 adduser --gecos "" --disabled-password $username
 chpasswd <<<"$username:$password"
-
 usermod -aG sudo $username
 
 ### --- customize end
